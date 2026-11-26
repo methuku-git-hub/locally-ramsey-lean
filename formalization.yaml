@@ -1,6 +1,6 @@
 version: "v0.4"
 project:
-  name: "Upper and lower bounds for locally Ramsey graphs"
+  name: "Improved bounds for locally Ramsey graphs"
   description: >-
     Let m_n(r) be the least m for which some n-vertex graph contains both
     a clique and an independent set of order r in every set of m vertices.
@@ -19,7 +19,7 @@ classification:
   arxiv: ["math.CO"]
   msc2020: ["05C55", "05D10"]
 sources:
-  - title: "A simplified proof of a lower bound for locally Ramsey graphs"
+  - title: "Improved bounds for locally Ramsey graphs"
     type: "paper"
     relationship: "formalizes"
     authors:
@@ -28,7 +28,7 @@ sources:
       - "Haoran Luo"
       - "Abhishek Methuku"
     location: "Revised Nov 23 one-endpoint manuscript, Theorem 1"
-    note: "LaTeX source SHA-256 3343146cea977e0f3ebfdbebe1855d3fc4e2900d9e1c672d5fd3d70c65742ce5."
+    note: "LaTeX source SHA-256 d4596a6d6a7d432820bc55a496bf68a0fd94a2fdbb1ec51e3f94a10ef3f1fe75."
 status:
   scope: "Both inequalities in Theorem 1 of the revised Nov 23 manuscript."
   sorry_count: 0

@@ -1,7 +1,7 @@
 # Improved bounds for locally Ramsey graphs
 
 This repository contains a Lean 4 and Mathlib formalization of Theorem 1 of
-*A simplified proof of a lower bound for locally Ramsey graphs*, by József
+*Improved bounds for locally Ramsey graphs*, by József
 Balogh, Matija Bucić, Haoran Luo and Abhishek Methuku. The targets are
 `LocallyRamsey.lower_bound` and `LocallyRamsey.upper_bound`.
 
