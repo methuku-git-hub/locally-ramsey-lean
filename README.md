@@ -1,4 +1,4 @@
-# Locally Ramsey graphs in Lean
+# Improved bounds for locally Ramsey graphs
 
 This repository contains a Lean 4 and Mathlib formalization of Theorem 1 of
 *A simplified proof of a lower bound for locally Ramsey graphs*, by József
