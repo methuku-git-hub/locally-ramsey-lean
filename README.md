@@ -7,18 +7,17 @@ Balogh, Matija Bucić, Haoran Luo and Abhishek Methuku. The targets are
 
 ## Abstract
 
-Let $m_n(r)$ be the least $m$ for which some $n$-vertex graph
-contains both a clique and an independent set of order $r$ in every
-set of $m$ vertices. With logarithms to base two, put $r=\lceil\log n\rceil$.
-In 1991 Erdős asked whether $m_n(r)\le\lceil(\log n)^3\rceil$
+With logarithms to base two, let $m(n)$ be the least $m$ for which
+some $n$-vertex graph contains both a clique and an independent set
+of order $\lceil\log n\rceil$ in every set of $m$ vertices.
+In 1991 Erdős asked whether $m(n)\le\lceil(\log n)^3\rceil$
 for arbitrarily large $n$. We answer this question negatively by proving that
 
 $$
-m_n(r)>\frac{(\log n)^{7/2}}{(\log\log n)^{24}}
+m(n)>\frac{(\log n)^{7/2}}{(\log\log n)^{24}}
 $$
 
-for all sufficiently large $n$.
-This improves the lower bound of Alon and Sudakov (2007).
+for all sufficiently large $n$, improving a bound of Alon and Sudakov (2007).
 We also give a simple construction that improves the upper bound of
 Alon, Bucić and Sudakov (2021) from $2^{\,2^{(\log\log n)^{1/2+o(1)}}}$
 to $2^{(9/2+o(1))(\log\log n)^2}$.
@@ -26,17 +25,16 @@ to $2^{(9/2+o(1))(\log\log n)^2}$.
 ## The mathematical statement
 
 **Theorem 1.** For every $\varepsilon>0$ and all sufficiently large $n$,
-with $r=\lceil\log n\rceil$,
 
 $$
 \frac{(\log n)^{7/2}}{(\log\log n)^{24}}
-<m_n(r)\le 2^{(9/2+\varepsilon)(\log\log n)^2}.
+<m(n)\le 2^{(9/2+\varepsilon)(\log\log n)^2}.
 $$
 
 ### Exact Lean statements
 
-In the `LocallyRamsey` namespace, [`threshold n r`](Challenge.lean#L28) is
-$m_n(r)$ and [`target n`](Challenge.lean#L33) is $\lceil\log n\rceil$.
+In the `LocallyRamsey` namespace, [`threshold n (target n)`](Challenge.lean#L28)
+is $m(n)$, with [`target n`](Challenge.lean#L33) equal to $\lceil\log n\rceil$.
 The statement of [`lower_bound`](Challenge.lean#L37) is
 
 ```lean

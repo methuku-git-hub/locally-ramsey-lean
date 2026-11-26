@@ -2,14 +2,14 @@ version: "v0.4"
 project:
   name: "Improved bounds for locally Ramsey graphs"
   description: >-
-    Let m_n(r) be the least m for which some n-vertex graph contains both
-    a clique and an independent set of order r in every set of m vertices.
-    With logarithms to base two, put r = ⌈log n⌉. In 1991 Erdős asked
-    whether m_n(r) ≤ ⌈(log n)^3⌉ for arbitrarily large n. We answer this
-    question negatively by proving that m_n(r) > (log n)^(7/2)/(log log n)^24
-    for all sufficiently large n. This improves the lower bound of Alon and
-    Sudakov (2007). We also give a simple construction that improves the
-    upper bound of Alon, Bucić and Sudakov (2021) from
+    With logarithms to base two, let m(n) be the least m for which some
+    n-vertex graph contains both a clique and an independent set of order
+    ⌈log n⌉ in every set of m vertices. In 1991 Erdős asked whether
+    m(n) ≤ ⌈(log n)^3⌉ for arbitrarily large n. We answer this question
+    negatively by proving that m(n) > (log n)^(7/2)/(log log n)^24
+    for all sufficiently large n, improving a bound of Alon and Sudakov
+    (2007). We also give a simple construction that improves the upper
+    bound of Alon, Bucić and Sudakov (2021) from
     2^(2^((log log n)^(1/2+o(1)))) to 2^((9/2+o(1))(log log n)^2).
     Both bounds are formalized in Lean 4.
   authors: ["Abhishek Methuku"]
@@ -28,7 +28,7 @@ sources:
       - "Haoran Luo"
       - "Abhishek Methuku"
     location: "Revised Nov 23 one-endpoint manuscript, Theorem 1"
-    note: "LaTeX source SHA-256 d4596a6d6a7d432820bc55a496bf68a0fd94a2fdbb1ec51e3f94a10ef3f1fe75."
+    note: "LaTeX source SHA-256 ad69acd550c1e342867a24e1eea095e7e3b7304212a80e4124ed89cd5815e91e."
 status:
   scope: "Both inequalities in Theorem 1 of the revised Nov 23 manuscript."
   sorry_count: 0
