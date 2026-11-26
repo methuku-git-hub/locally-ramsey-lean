@@ -1,0 +1,71 @@
+version: "v0.4"
+project:
+  name: "Upper and lower bounds for locally Ramsey graphs"
+  description: >-
+    Let m_n(r) be the least m for which some n-vertex graph contains both
+    a clique and an independent set of order r in every set of m vertices.
+    With logarithms to base two, put r = ⌈log n⌉. In 1991 Erdős asked
+    whether m_n(r) ≤ ⌈(log n)^3⌉ for arbitrarily large n. We answer this
+    question negatively by proving that m_n(r) > (log n)^(7/2)/(log log n)^24
+    for all sufficiently large n. This improves the lower bound of Alon and
+    Sudakov (2007). We also give a simple construction that improves the
+    upper bound of Alon, Bucić and Sudakov (2021) from
+    2^(2^((log log n)^(1/2+o(1)))) to 2^((9/2+o(1))(log log n)^2).
+    Both bounds are formalized in Lean 4.
+  authors: ["Abhishek Methuku"]
+  responsible_maintainers: ["Abhishek Methuku"]
+  license: "Apache-2.0"
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05C55", "05D10"]
+sources:
+  - title: "A simplified proof of a lower bound for locally Ramsey graphs"
+    type: "paper"
+    relationship: "formalizes"
+    authors:
+      - "József Balogh"
+      - "Matija Bucić"
+      - "Haoran Luo"
+      - "Abhishek Methuku"
+    location: "Revised Nov 23 one-endpoint manuscript, Theorem 1"
+    note: "LaTeX source SHA-256 3343146cea977e0f3ebfdbebe1855d3fc4e2900d9e1c672d5fd3d70c65742ce5."
+status:
+  scope: "Both inequalities in Theorem 1 of the revised Nov 23 manuscript."
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "LocallyRamsey.lower_bound"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+    - declaration: "LocallyRamsey.upper_bound"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6.2-Sol"]
+      framework: "OpenAI Codex"
+      tool_setup: >-
+        OpenAI Codex developed and checked the Lean proofs under the
+        direction of Abhishek Methuku, using Lean 4, Mathlib and Comparator.
+      cost:
+        spend_usd: "not tracked"
+fidelity:
+  divergences: >-
+    The upper estimate is expressed as an eventual bound for every fixed
+    positive excess over the coefficient 9/2. A graph on n vertices uses Fin n.
+    The lower proof rounds the finite sampling parameters and uses
+    ceil(r / (ln r)^2) as the cutoff on the number of vertices whose groups
+    have many intersections. The resulting lower bound has the denominator
+    and logarithm base stated in Theorem 1.
+review:
+  status: "agent-reviewed"
+  notes: >-
+    Both bounds passed local Comparator with Lean and NanoDa. The macOS
+    invocation used the option to disable sandboxing. Palomar verification
+    of a public commit is pending.

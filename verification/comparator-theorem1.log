@@ -1,0 +1,725 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Resolving dependencies
+Building Challenge
+⚠ [2100/2101] Replayed Challenge
+warning: Challenge.lean:37:8: declaration uses `sorry`
+warning: Challenge.lean:45:8: declaration uses `sorry`
+Build completed successfully (2101 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, LocallyRamsey.lower_bound, LocallyRamsey.upper_bound, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3292/3351] Replayed LocallyRamsey.Lower.Minimax
+warning: LocallyRamsey/Lower/Minimax.lean:119:11: `stdSimplex` has been deprecated: Use `Convexity.StdSimplex` instead
+
+Note: The updated constant has a different type:
+  (R : Type u) → [LE R] → [AddCommMonoid R] → [One R] → Type v → Type (max u v)
+instead of
+  (𝕜 : Type u_2) → (ι : Type u_1) → [Semiring 𝕜] → [PartialOrder 𝕜] → [Fintype ι] → Set (ι → 𝕜)
+warning: LocallyRamsey/Lower/Minimax.lean:131:12: `convex_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.instConvexSpace` instead
+
+Note: The updated constant has a different type:
+  {R : Type u_1} →
+    {I : Type u_5} →
+      [inst : PartialOrder R] →
+        [inst_1 : Semiring R] → [inst_2 : IsStrictOrderedRing R] → Convexity.ConvexSpace R (Convexity.StdSimplex R I)
+instead of
+  ∀ (𝕜 : Type u_2) (ι : Type u_1) [inst : Semiring 𝕜] [inst_1 : PartialOrder 𝕜] [inst_2 : Fintype ι] [IsOrderedRing 𝕜],
+    Convex 𝕜 (stdSimplex 𝕜 ι)
+warning: LocallyRamsey/Lower/Minimax.lean:142:11: `isCompact_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.compactSpace` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type u_1) (M : Type u_2) [inst : Ring R] [inst_1 : TopologicalSpace R] [IsTopologicalRing R]
+    [inst_3 : PartialOrder R] [inst_4 : IsStrictOrderedRing R] [CompactIccSpace R] [OrderClosedTopology R] [Finite M],
+    CompactSpace (Convexity.StdSimplex R M)
+instead of
+  ∀ (𝕜 : Type u_1) (ι : Type u_2) [inst : Fintype ι] [inst_1 : TopologicalSpace 𝕜] [inst_2 : Semiring 𝕜]
+    [inst_3 : PartialOrder 𝕜] [OrderClosedTopology 𝕜] [ContinuousAdd 𝕜] [CompactIccSpace 𝕜] [IsOrderedAddMonoid 𝕜],
+    IsCompact (stdSimplex 𝕜 ι)
+warning: LocallyRamsey/Lower/Minimax.lean:160:25: `stdSimplex` has been deprecated: Use `Convexity.StdSimplex` instead
+
+Note: The updated constant has a different type:
+  (R : Type u) → [LE R] → [AddCommMonoid R] → [One R] → Type v → Type (max u v)
+instead of
+  (𝕜 : Type u_2) → (ι : Type u_1) → [Semiring 𝕜] → [PartialOrder 𝕜] → [Fintype ι] → Set (ι → 𝕜)
+⚠ [3295/3351] Replayed LocallyRamsey.Lower.EqualMarginals
+warning: LocallyRamsey/Lower/EqualMarginals.lean:99:0: automatically included section variable(s) unused in theorem `LocallyRamsey.card_low_marginals_lt`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3301/3351] Replayed LocallyRamsey.Lower.RepeatedPositions
+warning: LocallyRamsey/Lower/RepeatedPositions.lean:17:0: automatically included section variable(s) unused in theorem `LocallyRamsey.biasedLaw_prob_mul_weight`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RepeatedPositions.lean:62:32: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3302/3351] Replayed LocallyRamsey.Lower.IntersectionDensity
+warning: LocallyRamsey/Lower/IntersectionDensity.lean:63:0: automatically included section variable(s) unused in theorem `LocallyRamsey.intersectionDensity_cons_of_constant`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3303/3351] Replayed LocallyRamsey.Lower.SaturatingMixture
+warning: LocallyRamsey/Lower/SaturatingMixture.lean:19:0: automatically included section variable(s) unused in theorem `LocallyRamsey.exists_saturating_coefficient`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3304/3351] Replayed LocallyRamsey.Lower.RetentionRule
+warning: LocallyRamsey/Lower/RetentionRule.lean:101:14: This simp argument is unused:
+  FiniteLaw.mean
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/RetentionRule.lean:106:14: This simp argument is unused:
+  ← Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.filter_mem_eq_inter, Finset.inter_eq_right.mpr hsub]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/RetentionRule.lean:106:35: This simp argument is unused:
+  Finset.filter_mem_eq_inter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [← Finset.sum_filter, Finset.inter_eq_right.mpr hsub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3306/3351] Replayed LocallyRamsey.Lower.CliqueOverlap
+warning: LocallyRamsey/Lower/CliqueOverlap.lean:18:0: automatically included section variable(s) unused in theorem `LocallyRamsey.kept_draw_hit_le`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3307/3351] Replayed LocallyRamsey.Lower.NamedRecords
+warning: LocallyRamsey/Lower/NamedRecords.lean:25:84: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3311/3351] Replayed LocallyRamsey.Lower.GroupIncidence
+warning: LocallyRamsey/Lower/GroupIncidence.lean:17:41: Variable name `hqU` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hqU
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3322/3371] Replayed LocallyRamsey.Lower.InitialScales
+warning: LocallyRamsey/Lower/InitialScales.lean:13:62: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/InitialScales.lean:16:39: Variable name `hLKb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hLKb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/InitialScales.lean:159:21: Variable name `u` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _u
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3326/3371] Replayed LocallyRamsey.Lower.ListClasses
+warning: LocallyRamsey/Lower/ListClasses.lean:24:0: automatically included section variable(s) unused in theorem `LocallyRamsey.card_small_signatures_ge_half`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/ListClasses.lean:44:4: Unused tactic linter: `change (bad.card : ℝ) * (2 * density * m) ≤ _` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3331/3371] Replayed LocallyRamsey.Lower.RepeatedSelection
+warning: LocallyRamsey/Lower/RepeatedSelection.lean:22:15: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3332/3371] Replayed LocallyRamsey.Lower.PositionRetention
+warning: LocallyRamsey/Lower/PositionRetention.lean:83:10: This simp argument is unused:
+  ← mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hBc]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/PositionRetention.lean:89:0: automatically included section variable(s) unused in theorem `LocallyRamsey.weighted_retention_degree`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/PositionRetention.lean:90:24: Variable name `hFS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hFS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3336/3371] Replayed LocallyRamsey.Lower.StableSampling
+warning: LocallyRamsey/Lower/StableSampling.lean:77:0: automatically included section variable(s) unused in theorem `LocallyRamsey.map_vertexMixture`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/StableSampling.lean:168:0: automatically included section variable(s) unused in theorem `LocallyRamsey.biasedLaw_event_small_density_le`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/StableSampling.lean:192:5: Variable name `hY` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hY
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/StableSampling.lean:214:0: automatically included section variable(s) unused in theorem `LocallyRamsey.rootDistance_single_intersection`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/StableSampling.lean:232:0: automatically included section variable(s) unused in theorem `LocallyRamsey.biasedLaw_avg_weight_eq_one`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/StableSampling.lean:253:0: automatically included section variable(s) unused in theorem `LocallyRamsey.mean_weight_of_large_density_le`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/StableSampling.lean:274:6: Unused tactic linter: `change
+  π.prob s * (Real.sqrt (Y C s) - Real.sqrt (Y W s)) ^ 2 =
+    π.prob s * (Real.sqrt (Y C s) - Real.sqrt 1) ^ 2` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3337/3371] Replayed LocallyRamsey.Lower.PermutedGroups
+warning: LocallyRamsey/Lower/PermutedGroups.lean:120:19: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/PermutedGroups.lean:122:21: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/PermutedGroups.lean:124:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: LocallyRamsey/Lower/PermutedGroups.lean:127:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3339/3371] Replayed LocallyRamsey.Lower.RetentionConcentration
+warning: LocallyRamsey/Lower/RetentionConcentration.lean:62:89: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3341/3371] Replayed LocallyRamsey.Lower.PreparedPositions
+warning: LocallyRamsey/Lower/PreparedPositions.lean:86:53: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/PreparedPositions.lean:149:37: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [F, h] at hx
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3342/3371] Replayed LocallyRamsey.Lower.CountedRetention
+warning: LocallyRamsey/Lower/CountedRetention.lean:23:5: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3343/3371] Replayed LocallyRamsey.Lower.GoodIntersections
+warning: LocallyRamsey/Lower/GoodIntersections.lean:166:0: automatically included section variable(s) unused in theorem `LocallyRamsey.intersectionDensity_eq_card`:
+  [DecidableEq V]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3344/3371] Replayed LocallyRamsey.Lower.PreparedGroupRetention
+warning: LocallyRamsey/Lower/PreparedGroupRetention.lean:17:0: automatically included section variable(s) unused in theorem `LocallyRamsey.rootDistance_product_staged`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/PreparedGroupRetention.lean:193:6: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/PreparedGroupRetention.lean:193:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3345/3371] Replayed LocallyRamsey.Lower.RetainedGroups
+warning: LocallyRamsey/Lower/RetainedGroups.lean:74:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.weight_nonneg`:
+  [Fintype V]
+  [DecidableEq V]
+  [Fintype I]
+  [DecidableEq I]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] [Fintype I] [DecidableEq I] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetainedGroups.lean:81:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.mass_weight_le`:
+  [Fintype V]
+  [DecidableEq V]
+  [Fintype I]
+  [DecidableEq I]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] [Fintype I] [DecidableEq I] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetainedGroups.lean:88:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.kept_mass_bad_eq`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetainedGroups.lean:140:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.kept_draw_hit_le`:
+  [Fintype V]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetainedGroups.lean:142:13: Variable name `hK` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hK
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3346/3371] Replayed LocallyRamsey.Lower.AnchoredGroups
+warning: LocallyRamsey/Lower/AnchoredGroups.lean:133:0: automatically included section variable(s) unused in theorem `LocallyRamsey.exists_disjoint_blocks_of_mul_le`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/AnchoredGroups.lean:155:28: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3349/3371] Replayed LocallyRamsey.Lower.NonadjacentOverlap
+warning: LocallyRamsey/Lower/NonadjacentOverlap.lean:103:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/NonadjacentOverlap.lean:103:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3350/3371] Replayed LocallyRamsey.Lower.UpperOverlapEstimate
+warning: LocallyRamsey/Lower/UpperOverlapEstimate.lean:27:5: Variable name `hraw` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hraw
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3351/3371] Replayed LocallyRamsey.Lower.OverlapIncidence
+warning: LocallyRamsey/Lower/OverlapIncidence.lean:57:10: This simp argument is unused:
+  ← mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hh']
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/OverlapIncidence.lean:147:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/OverlapIncidence.lean:148:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/OverlapIncidence.lean:155:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: LocallyRamsey/Lower/OverlapIncidence.lean:156:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3353/3371] Replayed LocallyRamsey.Lower.RetainedOverlap
+warning: LocallyRamsey/Lower/RetainedOverlap.lean:30:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.sum_survivors_eq`:
+  [Fintype V]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3354/3371] Replayed LocallyRamsey.Lower.AnchorProbability
+warning: LocallyRamsey/Lower/AnchorProbability.lean:17:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.event_anchor_marked_gt_le`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3355/3371] Replayed LocallyRamsey.Lower.DescriptionExperiment
+warning: LocallyRamsey/Lower/DescriptionExperiment.lean:40:0: automatically included section variable(s) unused in theorem `LocallyRamsey.FiniteLaw.event_regionTable_row`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/DescriptionExperiment.lean:221:35: This simp argument is unused:
+  X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [g, fillPositions, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/DescriptionExperiment.lean:235:10: This simp argument is unused:
+  X
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [u, g, fillPositions, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3356/3371] Replayed LocallyRamsey.Lower.RetentionEvents
+warning: LocallyRamsey/Lower/RetentionEvents.lean:20:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.isGood_local`:
+  [Fintype I]
+  [DecidableEq I]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetentionEvents.lean:30:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.isGood_group`:
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetentionEvents.lean:76:0: automatically included section variable(s) unused in theorem `LocallyRamsey.RetainedGroups.Tests.rawWeight_local`:
+  [Fintype V]
+  [DecidableEq V]
+  [Fintype Ω]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] [Fintype Ω] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/RetentionEvents.lean:109:63: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/RetentionEvents.lean:110:64: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/RetentionEvents.lean:235:65: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/RetentionEvents.lean:289:26: This simp argument is unused:
+  hJ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reject, hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3359/3371] Replayed LocallyRamsey.Lower.PreparedRegions
+warning: LocallyRamsey/Lower/PreparedRegions.lean:26:76: Variable name `hBW` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hBW
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3360/3371] Replayed LocallyRamsey.Lower.CliqueLocation
+warning: LocallyRamsey/Lower/CliqueLocation.lean:277:5: Variable name `hDisjoint` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hDisjoint
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3361/3371] Replayed LocallyRamsey.Lower.ListPacking
+warning: LocallyRamsey/Lower/ListPacking.lean:28:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: LocallyRamsey/Lower/ListPacking.lean:18:0: automatically included section variable(s) unused in theorem `LocallyRamsey.event_many_long_signatures_le`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/ListPacking.lean:20:19: Variable name `hl` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hl
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/ListPacking.lean:191:12: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [he, μ.mean_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: LocallyRamsey/Lower/ListPacking.lean:243:18: This simp argument is unused:
+  hn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [draw, hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3362/3371] Replayed LocallyRamsey.Lower.LocationProbability
+warning: LocallyRamsey/Lower/LocationProbability.lean:18:0: automatically included section variable(s) unused in theorem `LocallyRamsey.event_bad_location_list`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/LocationProbability.lean:25:15: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/LocationProbability.lean:262:15: Variable name `hγ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hγ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3363/3371] Replayed LocallyRamsey.Lower.GroupDrawRule
+warning: LocallyRamsey/Lower/GroupDrawRule.lean:90:6: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/GroupDrawRule.lean:90:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LocallyRamsey/Lower/GroupDrawRule.lean:175:0: automatically included section variable(s) unused in theorem `LocallyRamsey.mean_good_intersection_fraction`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3364/3371] Replayed LocallyRamsey.Lower.BiasedGroupDraws
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:101:69: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:101:78: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:101:69: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:101:78: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:124:68: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:124:77: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:124:68: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:124:77: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:19:35: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:48:8: Variable name `C` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _C
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: LocallyRamsey/Lower/BiasedGroupDraws.lean:124:68: This simp argument is unused:
+  if_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [marginal, hx, if_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3365/3371] Replayed LocallyRamsey.Lower.LocationScales
+warning: LocallyRamsey/Lower/LocationScales.lean:175:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:175:70: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:196:89: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:215:80: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:215:84: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:257:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:175:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:215:84: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:196:89: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LocallyRamsey/Lower/LocationScales.lean:257:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LocallyRamsey/Lower/LocationScales.lean:400:79: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:400:83: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:520:61: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:520:65: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:548:65: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:548:69: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:400:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:520:65: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: LocallyRamsey/Lower/LocationScales.lean:548:69: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3366/3371] Replayed LocallyRamsey.Lower.LocationRecords
+warning: LocallyRamsey/Lower/LocationRecords.lean:20:0: automatically included section variable(s) unused in theorem `LocallyRamsey.exists_enumerateDraw_of_mem`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3367/3371] Replayed LocallyRamsey.Lower.FiniteCompletion
+warning: LocallyRamsey/Lower/FiniteCompletion.lean:81:0: automatically included section variable(s) unused in theorem `LocallyRamsey.LowerExperiment.decoded_subset`:
+  [Fintype V]
+  [Nonempty (PositionGroup I q)]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Nonempty (PositionGroup I q)] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/FiniteCompletion.lean:137:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: LocallyRamsey/Lower/FiniteCompletion.lean:200:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [P, h] at hx
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: LocallyRamsey/Lower/FiniteCompletion.lean:180:0: automatically included section variable(s) unused in theorem `LocallyRamsey.LowerExperiment.kept_clique_of_located`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: LocallyRamsey/Lower/FiniteCompletion.lean:367:67: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [3368/3371] Replayed LocallyRamsey.Lower.CompletionScales
+warning: LocallyRamsey/Lower/CompletionScales.lean:243:62: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/CompletionScales.lean:248:6: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: LocallyRamsey/Lower/CompletionScales.lean:243:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: LocallyRamsey/Lower/CompletionScales.lean:248:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3369/3371] Replayed LocallyRamsey.Lower.MainBound
+warning: LocallyRamsey/Lower/MainBound.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: LocallyRamsey/Lower/MainBound.lean:64:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: LocallyRamsey/Lower/MainBound.lean:217:27: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [e, he] at hn
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Build completed successfully (3371 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, LocallyRamsey.lower_bound, LocallyRamsey.upper_bound, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
