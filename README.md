@@ -78,6 +78,10 @@ lake comparator --config comparator.json
 
 ## Verification
 
+Palomar registered both bounds as
+[PALOMAR-2026-11-26-000030, version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-26-000030&version=1).
+The registered source is commit `c0e129b37ab3fc891b2fb7b7dda9583b2b2530b9`.
+
 The [local Comparator run](verification/comparator-theorem1.log) checked both
 bounds with Lean's kernel and NanoDa. The [axiom audit](verification/axioms.log)
 records `propext`, `Classical.choice` and `Quot.sound` as the only axioms
